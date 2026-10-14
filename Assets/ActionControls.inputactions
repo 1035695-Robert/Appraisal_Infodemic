@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "name": "ActionControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "8b0fba3a-823a-439d-8ef1-2d97dabd2efe",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "0c0aab76-234b-4f38-8275-5c4d68989a84",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "51bfb1d9-ca0b-48f9-b754-673dd0634c27",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a27befb3-3ed6-4319-98b5-16f43729d131",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c1662c4-50f0-4419-b8d6-f66a9e68ddc0",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "30a4d73b-15ea-4bf2-8448-3f513dc1882a",
+            "actions": [
+                {
+                    "name": "point",
+                    "type": "Value",
+                    "id": "8fdd5764-e7c9-4020-9c97-700064233648",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7b5ad770-c9ff-44f0-82df-f7fa481e1183",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
