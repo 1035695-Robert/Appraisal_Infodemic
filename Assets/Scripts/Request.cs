@@ -2,12 +2,19 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum ResponseType
+{
+    None,
+    TrueInformation,
+    Disinformation,
+    Misinformation
+}
+    
 public class Request : MonoBehaviour
 {
     private Button requestbutton;
 
-    [SerializeField] private bool isRequest;
-
+[SerializeField] private ResponseType responseType;
     [SerializeField] private string emailName;
     [SerializeField] private string header;
     [TextArea(10, 20)] [SerializeField] private string requestMessage;
@@ -21,7 +28,7 @@ public class Request : MonoBehaviour
         nameText.text = emailName;
         requestTitle.text = header;
         requestbutton = GetComponent<Button>();
-        OnFontChangeSize();
+      
     }
 
     private void OnEnable()
@@ -30,13 +37,12 @@ public class Request : MonoBehaviour
         EventManager.OnFontSizeUpdate += OnFontChangeSize;
     }
 
- 
-
     public void SelectedRequest()
     {
         string requestheader = requestTitle.text;
-        EventManager.OnRequestUpdate?.Invoke(requestMessage,requestheader,isRequest);
+        EventManager.OnRequestUpdate?.Invoke(requestMessage,requestheader,responseType);
     }
+    
     private void OnFontChangeSize()
     {
         if (GameManager.instance.fontSize > 35) return;
