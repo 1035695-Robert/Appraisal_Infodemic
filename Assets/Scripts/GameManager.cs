@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
             menuUI.SetActive(!menuUI.activeSelf);
         }
     }
+
+    
+ 
     
 }
 

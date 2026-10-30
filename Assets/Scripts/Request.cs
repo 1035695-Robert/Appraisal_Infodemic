@@ -9,16 +9,16 @@ public enum ResponseType
     Disinformation,
     Misinformation
 }
-    
+
 public class Request : MonoBehaviour
 {
     private Button requestbutton;
 
-[SerializeField] private ResponseType responseType;
+    [SerializeField] private ResponseType responseType;
     [SerializeField] private string emailName;
     [SerializeField] private string header;
     [TextArea(10, 20)] [SerializeField] private string requestMessage;
-    
+
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI requestTitle;
 
@@ -28,7 +28,6 @@ public class Request : MonoBehaviour
         nameText.text = emailName;
         requestTitle.text = header;
         requestbutton = GetComponent<Button>();
-      
     }
 
     private void OnEnable()
@@ -40,22 +39,33 @@ public class Request : MonoBehaviour
     public void SelectedRequest()
     {
         string requestheader = requestTitle.text;
-        EventManager.OnRequestUpdate?.Invoke(requestMessage,requestheader,responseType);
+        EventManager.OnRequestUpdate?.Invoke(requestMessage, requestheader, responseType);
+        if (responseType == ResponseType.None)
+        {
+            WindowManager.instance.CloseWindow("Response Window");
+            return;
+        }
+        Debug.Log("open Response");
+            WindowManager.instance.OpenResponseWindow("Response Window");
+        
     }
-    
+
+
     private void OnFontChangeSize()
     {
         if (GameManager.instance.fontSize > 35) return;
         nameText.fontSize = GameManager.instance.fontSize;
         if (GameManager.instance.fontSize > 25)
         {
-            requestTitle.gameObject.SetActive(false);     
+            requestTitle.gameObject.SetActive(false);
         }
         else
         {
-            requestTitle.gameObject.SetActive(true);}
-        requestTitle.fontSize = GameManager.instance.fontSize/2;
-       }
+            requestTitle.gameObject.SetActive(true);
+        }
+
+        requestTitle.fontSize = GameManager.instance.fontSize / 2;
+    }
 
     private void OnDisable()
     {

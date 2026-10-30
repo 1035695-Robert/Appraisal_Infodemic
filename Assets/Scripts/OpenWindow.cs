@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class OpenWindow : MonoBehaviour
 {
     private Button tabButton;
-    public GameObject targetWindow;
-    public GameObject windows;
+   [SerializeField] private string targetName;
 
 
     private void OnEnable()
@@ -23,11 +22,6 @@ public class OpenWindow : MonoBehaviour
 
     private void OnButtonClick()
     {
-        if (!targetWindow.activeSelf)
-            targetWindow.SetActive(true);
-        else if (targetWindow.transform.GetSiblingIndex() == windows.transform.childCount - 1)
-            targetWindow.SetActive(false);
-
-        targetWindow.transform.SetAsLastSibling();
+       WindowManager.instance.OpenWindow(targetName);
     }
 }
