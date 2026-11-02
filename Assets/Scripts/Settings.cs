@@ -30,7 +30,7 @@ public class Settings : MonoBehaviour
     private void FontSizeChange(int value)
     {
         _gameManager.fontSize += value;
-        if (_gameManager.fontSize > 45) _gameManager.fontSize = 45;
+        if (_gameManager.fontSize > 35) _gameManager.fontSize = 35;
         if (_gameManager.fontSize < 15) _gameManager.fontSize = 15;
         EventManager.OnFontSizeUpdate?.Invoke();
     }

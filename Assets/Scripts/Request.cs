@@ -23,9 +23,11 @@ public class Request : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI requestTitle;
-    
-    [SerializeField] private float waitTime;
-    [SerializeField] private GameObject[] nextEmails;
+
+    [Header("If Requests")] public bool hasResponded;
+
+
+    [SerializeField] private int index = 0;
 
 
     private void Awake()
@@ -33,6 +35,7 @@ public class Request : MonoBehaviour
         nameText.text = emailName;
         requestTitle.text = header;
         requestbutton = GetComponent<Button>();
+        hasResponded = false;
     }
 
     private void OnEnable()
@@ -44,31 +47,27 @@ public class Request : MonoBehaviour
     public void SelectedRequest()
     {
         string requestheader = requestTitle.text;
+
         EventManager.OnRequestUpdate?.Invoke(requestMessage, requestheader, responseType);
+
         if (responseType == ResponseType.None)
         {
             WindowManager.instance.CloseWindow("Response Window");
-            StartCoroutine(DelayForNextEmail());
+            Debug.Log("this is an Email");
+            return;
+        }
+
+        if (hasResponded)
+        {
+            WindowManager.instance.CloseWindow("Response Window");
+
             return;
         }
 
         Debug.Log("open Response");
         WindowManager.instance.OpenResponseWindow("Response Window");
-
-        StartCoroutine(DelayForNextEmail());
-    }
-
-    private IEnumerator DelayForNextEmail()
-    {
-        float wait = waitTime;
-        Debug.Log(emailName);
-        yield return new WaitForSeconds(wait);
-        foreach (GameObject email in nextEmails)
-        {
-            email.SetActive(true);
-        }
-
-        yield return null;
+        Response.instance.responseType = responseType;
+        Response.instance.targetRequest = this;
     }
 
 

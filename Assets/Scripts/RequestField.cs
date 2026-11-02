@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RequestField : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class RequestField : MonoBehaviour
 
     [SerializeField] private GameObject responseField;
 
+    [SerializeField] private ScrollRect  scrollbar;
     private void OnEnable()
     {
         EventManager.OnRequestUpdate += UpdateRequest;
@@ -18,17 +20,14 @@ public class RequestField : MonoBehaviour
     
     private void UpdateRequest(string requestMessage, string requestHeader, ResponseType type)
     {
+        
         requestTitle.text = requestHeader;
         textField.text = requestMessage;
+        scrollbar.verticalNormalizedPosition = 1f;
         UpdateFontSize();
-        if (type == ResponseType.None) return;
-        ToggleResponseField();
     }
 
-    private void ToggleResponseField()
-    {
-        responseField.SetActive(!responseField.activeSelf);
-    }
+ 
 
     private void UpdateFontSize()
     {
