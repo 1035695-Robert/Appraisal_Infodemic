@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public enum ResponseType
@@ -21,6 +23,9 @@ public class Request : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI requestTitle;
+    
+    [SerializeField] private float waitTime;
+    [SerializeField] private GameObject[] nextEmails;
 
 
     private void Awake()
@@ -43,11 +48,27 @@ public class Request : MonoBehaviour
         if (responseType == ResponseType.None)
         {
             WindowManager.instance.CloseWindow("Response Window");
+            StartCoroutine(DelayForNextEmail());
             return;
         }
+
         Debug.Log("open Response");
-            WindowManager.instance.OpenResponseWindow("Response Window");
-        
+        WindowManager.instance.OpenResponseWindow("Response Window");
+
+        StartCoroutine(DelayForNextEmail());
+    }
+
+    private IEnumerator DelayForNextEmail()
+    {
+        float wait = waitTime;
+        Debug.Log(emailName);
+        yield return new WaitForSeconds(wait);
+        foreach (GameObject email in nextEmails)
+        {
+            email.SetActive(true);
+        }
+
+        yield return null;
     }
 
 

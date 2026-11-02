@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,29 +17,31 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
-
+    
+    [SerializeField] private Button settingButton;
+    [SerializeField] private GameObject menuUI;
+    
     [Header("Settings")] 
     public float fontSize;
-    
-    
-    [SerializeField] private GameObject menuUI;
-    public void Update()
+
+    private void OnEnable()
     {
-        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-            ToggleMenu();
+        settingButton.onClick.AddListener(ToggleMenu);
     }
-    
+
 
     private void ToggleMenu()
     {
         if (menuUI != null)
         {
             menuUI.SetActive(!menuUI.activeSelf);
+            menuUI.transform.SetAsLastSibling();
         }
     }
 
-    
- 
-    
+    private void OnDisable()
+    {
+        settingButton.onClick.RemoveListener(ToggleMenu);
+    }
 }
 
