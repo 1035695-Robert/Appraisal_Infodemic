@@ -19,8 +19,6 @@ public class WindowManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-   
-
     #region Toggle Window State
 
     [SerializeField] private GameObject windowObject;

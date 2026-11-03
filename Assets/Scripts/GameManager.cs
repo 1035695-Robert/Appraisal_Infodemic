@@ -28,8 +28,7 @@ public class GameManager : MonoBehaviour
     {
         settingButton.onClick.AddListener(ToggleMenu);
     }
-
-
+    
     private void ToggleMenu()
     {
         if (menuUI != null)

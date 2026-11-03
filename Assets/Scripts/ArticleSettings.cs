@@ -5,8 +5,7 @@ using UnityEngine;
 public class ArticleSettings : MonoBehaviour
 {
    [SerializeField] TextMeshProUGUI textField;
-
-  
+   
    private void OnEnable()
    {
       EventManager.OnFontSizeUpdate += FontUpdateSize;
