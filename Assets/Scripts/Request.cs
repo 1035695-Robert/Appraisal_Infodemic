@@ -26,8 +26,9 @@ public class Request : MonoBehaviour
 
     [Header("If Requests")] public bool hasResponded;
 
-
+    [SerializeField] bool hasBeenOpened;
     [SerializeField] private int index = 0;
+    [SerializeField] private float waitTime;
 
 
     private void Awake()
@@ -54,6 +55,12 @@ public class Request : MonoBehaviour
         {
             WindowManager.instance.CloseWindow("Response Window");
             Debug.Log("this is an Email");
+            if (!hasBeenOpened)
+            {
+                NextRequest.instance.ChecktoSendEmails(index, waitTime);
+                hasBeenOpened = true;
+            }
+
             return;
         }
 
