@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Response : MonoBehaviour
 {
     public static Response instance;
+
     public void Awake()
     {
         if (instance != null && instance != this)
@@ -13,49 +14,48 @@ public class Response : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         instance = this;
     }
-    
-    
+
+
     [SerializeField] private Button trueInformation;
     [SerializeField] private Button misinformation;
     [SerializeField] private Button disinformation;
 
     public Request targetRequest;
-    
+
     public ResponseType responseType;
-    
+
     private void OnEnable()
     {
+        this.transform.SetAsLastSibling();
+
         trueInformation.onClick.AddListener(() => SelectedResponse(ResponseType.TrueInformation));
         misinformation.onClick.AddListener(() => SelectedResponse(ResponseType.Misinformation));
         disinformation.onClick.AddListener(() => SelectedResponse(ResponseType.Disinformation));
     }
 
-    private void SelectedResponse(ResponseType  responseSelected)
+    private void SelectedResponse(ResponseType responseSelected)
     {
         if (responseSelected == responseType) Correct();
         else Incorrect();
     }
-    
+
     private void Correct()
     {
-      Debug.Log("correct");
-      targetRequest.hasResponded =  true;
-      NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
-      gameObject.SetActive(false);
-
-     
+        Debug.Log("correct");
+        targetRequest.hasResponded = true;
+        NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
+        gameObject.SetActive(false);
     }
 
     private void Incorrect()
     {
         Debug.Log("incorrect");
-        targetRequest.hasResponded =  true;
+        targetRequest.hasResponded = true;
         NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
         gameObject.SetActive(false);
-
-      
     }
 
     private void OnDisable()

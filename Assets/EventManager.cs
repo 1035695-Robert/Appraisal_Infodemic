@@ -8,4 +8,7 @@ public class EventManager
     public delegate void FontSizeUpdate();
     public static FontSizeUpdate OnFontSizeUpdate;
 
+
+    public delegate void ToggleHints();
+    public static ToggleHints OnToggleHints;
 }

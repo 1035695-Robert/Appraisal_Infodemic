@@ -1,16 +1,7 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public enum ResponseType
-{
-    None,
-    TrueInformation,
-    Disinformation,
-    Misinformation
-}
 
 public class Request : MonoBehaviour
 {
@@ -20,22 +11,28 @@ public class Request : MonoBehaviour
     [SerializeField] private string emailName;
     [SerializeField] private string header;
     [TextArea(10, 20)] [SerializeField] private string requestMessage;
+    [TextArea(10, 20)] [SerializeField] private string requestMessageWithHints;
+    [SerializeField] public int index = 0;
+    [SerializeField] public float waitTime;
 
     [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private TextMeshProUGUI requestTitle;
+    [SerializeField] private TextMeshProUGUI subHeader;
 
-    [Header("If Requests")] public bool hasResponded;
-   
+    public ResponseType Type => responseType;
+    public string EmailName => emailName;
+    public string Header => header;
+    public string RequestMessage => requestMessage;
+    public string RequestMessageWithHints => requestMessageWithHints;
+    public int Index => index;
+    public float WaitTime => waitTime;
+
+    public bool hasResponded { get; set; }
+    public bool hasBeenCompleted { get; set; }
     [SerializeField] private Sprite profileImage;
     [SerializeField] private Image profile;
 
-    bool hasBeenCompleted;
-    [SerializeField] public int index = 0;
-    [SerializeField] public float waitTime;
-    
-
     private void OnEnable()
-    { 
+    {
         profileImage = Resources.Load<Sprite>("Sprites/Profile/" + emailName + " Icon");
         profile = transform.Find("Profile").gameObject.GetComponent<Image>();
         if (profile != null || profileImage != null)
@@ -43,45 +40,25 @@ public class Request : MonoBehaviour
             profile.sprite = profileImage;
             profile.color = Color.white;
         }
-        nameText.text = emailName;
-        requestTitle.text = header;
+
+        nameText = transform.Find("Info/Name").GetComponent<TextMeshProUGUI>();
+        nameText.text = EmailName;
+        subHeader = transform.Find("Info/SubHeader").GetComponent<TextMeshProUGUI>();
+        subHeader.text = Header;
         requestbutton = GetComponent<Button>();
         hasResponded = false;
-        
-        requestbutton.onClick.AddListener(SelectedRequest);
+
+        requestbutton.onClick.AddListener(SelectionRequest);
         EventManager.OnFontSizeUpdate += OnFontChangeSize;
     }
 
-    public void SelectedRequest()
+    public void SelectionRequest()
     {
-        string requestheader = requestTitle.text;
-
-        EventManager.OnRequestUpdate?.Invoke(requestMessage, requestheader, responseType);
-
-        if (responseType == ResponseType.None)
+        if (EmailAndRequestManager.instance != null)
         {
-            WindowManager.instance.CloseWindow("Response Window");
-            Debug.Log("this is an Email");
-            if (!hasBeenCompleted)
-            {
-                    NextRequest.instance.ChecktoSendEmails(index, waitTime);
-                    hasBeenCompleted = true;
-            }
-            return;
+            EmailAndRequestManager.instance.SelectedRequest(this);
         }
-        
-        if (hasResponded)
-        {
-            WindowManager.instance.CloseWindow("Response Window");
-            return;
-        }
-
-        Debug.Log("open Response");
-        WindowManager.instance.OpenResponseWindow("Response Window");
-        Response.instance.responseType = responseType;
-        Response.instance.targetRequest = this;
     }
-
 
     private void OnFontChangeSize()
     {
@@ -89,18 +66,18 @@ public class Request : MonoBehaviour
         nameText.fontSize = GameManager.instance.fontSize;
         if (GameManager.instance.fontSize > 25)
         {
-            requestTitle.gameObject.SetActive(false);
+            subHeader.gameObject.SetActive(false);
         }
         else
         {
-            requestTitle.gameObject.SetActive(true);
+            subHeader.gameObject.SetActive(true);
         }
 
-        requestTitle.fontSize = GameManager.instance.fontSize / 2;
+        subHeader.fontSize = GameManager.instance.fontSize / 2;
     }
 
     private void OnDisable()
     {
-        requestbutton.onClick.RemoveListener(SelectedRequest);
+        requestbutton.onClick.RemoveListener(SelectionRequest);
     }
 }

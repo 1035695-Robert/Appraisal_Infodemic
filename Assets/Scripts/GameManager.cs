@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private Button settingButton;
     [SerializeField] private GameObject menuUI;
+
+    public bool isToggleHints = false;
     
     [Header("Settings")] 
     public float fontSize;

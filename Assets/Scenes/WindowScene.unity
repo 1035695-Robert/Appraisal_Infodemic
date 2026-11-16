@@ -158,7 +158,6 @@ RectTransform:
   - {fileID: 651956632}
   - {fileID: 1261841419}
   - {fileID: 501282943}
-  - {fileID: 646001165}
   - {fileID: 355211973}
   - {fileID: 127072845}
   m_Father: {fileID: 806281884}
@@ -333,9 +332,9 @@ RectTransform:
   m_Father: {fileID: 499603506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -7, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &14247690
 MonoBehaviour:
@@ -682,13 +681,13 @@ MonoBehaviour:
     is disinformation. Think you\u2019ll be able to tell the difference?\n\n Let\u2019s
     find out. I\u2019m sending you 3 requests and the manual File for verification
     now.\n\nGenius game master,\nSir. Manager"
-  nameText: {fileID: 1256693965}
-  requestTitle: {fileID: 1291638231}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: 
   index: 2
   waitTime: 3
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &26002667
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,10 +721,10 @@ RectTransform:
   - {fileID: 110808478}
   m_Father: {fileID: 559144652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -250}
-  m_SizeDelta: {x: 760, y: 400}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26002669
 MonoBehaviour:
@@ -800,9 +799,9 @@ RectTransform:
   m_Father: {fileID: 110808478}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -7, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &35675877
 MonoBehaviour:
@@ -1131,10 +1130,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 146398583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 28}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 66, y: -118}
+  m_SizeDelta: {x: 132, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &66112679
 MonoBehaviour:
@@ -1319,7 +1318,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1955343157}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.77771646
+  m_Size: 0.7777164
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1671,10 +1670,10 @@ RectTransform:
   - {fileID: 622327697}
   m_Father: {fileID: 1387855121}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: 0}
-  m_SizeDelta: {x: 760, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &106008142
 MonoBehaviour:
@@ -1939,6 +1938,7 @@ GameObject:
   - component: {fileID: 127072845}
   - component: {fileID: 127072848}
   - component: {fileID: 127072849}
+  - component: {fileID: 127072850}
   m_Layer: 5
   m_Name: Email Window
   m_TagString: Untagged
@@ -2001,6 +2001,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &127072850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127072844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1424429544c0e6f4087cedc7785e28e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _request: {fileID: 0}
 --- !u!1 &130028639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,7 +2223,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -380}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &133564183
 MonoBehaviour:
@@ -2232,18 +2245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Conversation between Tom and Eric, employees at a 6/12 gas station.\r\n{This
-    source cannot be verified. Proceed with caution.}\r\n\r\nTom: Hey, Eric, did
-    you get the manager\u2019s message? \r\nEric: I did. Sounds ridiculous, right?\r\nTom:
-    Yeah, and I don\u2019t think it\u2019s true.\r\nEric: Why do you say that? The
-    video seemed legit, and there\u2019s even a scientific paper, isn\u2019t there?\r\nTom:
-    Yeah, but I just had my shift, and I did as the manager said, but it didn\u2019t
-    help at all. In fact, it made the slushies take longer to make.\r\nEric: I wonder
-    why. Hang on. My dad has access to that O.V.T. AI-Checker. I\u2019ll ask it and
-    see if this is real or not.\r\nTom: Thanks, man. No one else seems to believe
-    me, and the manager just blamed me and said I did it wrong.\r\nTom: I don't think
-    Derek's lying to us. I reckon he just watched that video and misunderstood what
-    it was actually saying. \r\n"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2355,7 +2357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &146398583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2372,10 +2374,10 @@ RectTransform:
   - {fileID: 66112678}
   m_Father: {fileID: 715353497}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 497, y: -223}
+  m_SizeDelta: {x: 132, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146398584
 MonoBehaviour:
@@ -2487,9 +2489,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1053794531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 155, y: -30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149365044
@@ -2625,7 +2627,7 @@ RectTransform:
   m_Father: {fileID: 234175825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3061,10 +3063,10 @@ RectTransform:
   - {fileID: 380024951}
   m_Father: {fileID: 1387855121}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -250}
-  m_SizeDelta: {x: 760, y: 400}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &214638282
 MonoBehaviour:
@@ -3140,7 +3142,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -380}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &218592348
 MonoBehaviour:
@@ -3162,21 +3164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Message to all 6/12 gas station employees,\r\n\r\nHey everyone, this is
-    your manager, Derek. I\u2019ve heard several complaints from customers and staff
-    that the slushy machines are old and no longer freeze before opening. While this
-    site doesn\u2019t have the funds to buy a new machine, I watched an interesting
-    YouTube video from a channel called Be Smart (2026) that says heating something
-    up can make it freeze faster.\r\n\r\nNow, I know you can\u2019t just believe
-    everything you see on the internet, so I did a quick search and found a research
-    paper that describes this \u201CMpemba effect\u201D (Burridge & Hallstadius,
-    2020), so it seems real.\r\n\r\nAnd so it occurred to me that if heating water
-    always makes it freeze faster, then heating our slushies before we put them in
-    the machine will also make them freeze faster, right? \r\n\r\nSo from now on,
-    when you\u2019re on opening shift, please heat the slushy liquid to near-boiling
-    before putting it in the machine and turning it on. If you do it right, I don\u2019t
-    expect to see any more complaints about this issue.\r\n\r\nYour direct supervisor
-    and manager,\r\nDerek"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3559,7 +3547,7 @@ GameObject:
   - component: {fileID: 263703438}
   - component: {fileID: 263703437}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3943,96 +3931,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &290939297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 290939298}
-  - component: {fileID: 290939301}
-  - component: {fileID: 290939300}
-  - component: {fileID: 290939299}
-  m_Layer: 5
-  m_Name: Viewport
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &290939298
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290939297}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1639105837}
-  m_Father: {fileID: 532905611}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 1}
---- !u!114 &290939299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290939297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 0
---- !u!114 &290939300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290939297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &290939301
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290939297}
-  m_CullTransparentMesh: 1
 --- !u!1 &305582769
 GameObject:
   m_ObjectHideFlags: 0
@@ -4379,10 +4277,10 @@ RectTransform:
   - {fileID: 1434992378}
   m_Father: {fileID: 1242103938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -250}
-  m_SizeDelta: {x: 760, y: 400}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &314061336
 MonoBehaviour:
@@ -4882,13 +4780,13 @@ MonoBehaviour:
   requestMessage: "Is it true that:\nOur company O.V.T.\u2019s full name is the Office
     of Verified Truth (O.V.T., 2026).\nReference:\nO.V.T. (2026). Employee manual:
     Introductory chapter. [Manual]."
-  nameText: {fileID: 130028641}
-  requestTitle: {fileID: 1661028434}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: 
   index: 3
   waitTime: 2
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &370586731
 GameObject:
   m_ObjectHideFlags: 0
@@ -5439,10 +5337,10 @@ RectTransform:
   - {fileID: 844577087}
   m_Father: {fileID: 816527189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -250}
-  m_SizeDelta: {x: 760, y: 400}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382781089
 MonoBehaviour:
@@ -5500,7 +5398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &399904413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5517,10 +5415,10 @@ RectTransform:
   - {fileID: 818404348}
   m_Father: {fileID: 715353497}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 355, y: -223}
+  m_SizeDelta: {x: 132, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &399904415
 CanvasRenderer:
@@ -5636,7 +5534,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 108.609985}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &400560802
 MonoBehaviour:
@@ -5909,81 +5807,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403081159}
   m_CullTransparentMesh: 1
---- !u!1 &419241238
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 419241239}
-  - component: {fileID: 419241241}
-  - component: {fileID: 419241240}
-  m_Layer: 5
-  m_Name: Handle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &419241239
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419241238}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 530724615}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &419241240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419241238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &419241241
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419241238}
-  m_CullTransparentMesh: 1
 --- !u!1 &419325724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6019,9 +5842,9 @@ RectTransform:
   m_Father: {fileID: 1041478693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -7, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &419325726
 MonoBehaviour:
@@ -6109,10 +5932,10 @@ RectTransform:
   - {fileID: 1111253143}
   m_Father: {fileID: 1242103938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: 0}
-  m_SizeDelta: {x: 760, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &426944829
 MonoBehaviour:
@@ -6568,145 +6391,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462398283}
   m_CullTransparentMesh: 1
---- !u!1 &465826130
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 465826131}
-  - component: {fileID: 465826133}
-  - component: {fileID: 465826132}
-  m_Layer: 5
-  m_Name: title
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &465826131
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465826130}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 527498127}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -10, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &465826132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465826130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Video
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &465826133
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465826130}
-  m_CullTransparentMesh: 1
 --- !u!1 &483833754
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,7 +6404,7 @@ GameObject:
   - component: {fileID: 483833757}
   - component: {fileID: 483833756}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7029,7 +6713,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 125, y: 100}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500093229
 MonoBehaviour:
@@ -7289,7 +6973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &501282943
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7324,6 +7008,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 981420559}
+  fileWithoutHints: 'The Mpemba effect is the phenomenon where hotter water can sometimes
+    freeze faster than colder water. This study found that the effect can be reproduced
+    by increasing the number of nucleation sites in the warmer sample''s container.
+    Surprisingly, hot water could still freeze faster even when it required over
+    50% more energy to cool. However, results vary greatly depending on the liquid''s
+    exact chemistry, and this should not be taken as a universally applicable effect. '
+  fileWithHints: <b>The Mpemba effect is the phenomenon where hotter water can sometimes
+    freeze faster than colder water.</b> This study found that the effect can be
+    reproduced by increasing the number of nucleation sites in the warmer sample's
+    container. Surprisingly, hot water could still freeze faster even when it required
+    over 50% more energy to cool. However, results vary greatly depending on the
+    liquid's exact chemistry, and <b>this should not be taken as a universally applicable
+    effect</b>.
 --- !u!114 &501282945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7489,7 +7186,7 @@ GameObject:
   - component: {fileID: 508857856}
   - component: {fileID: 508857855}
   m_Layer: 5
-  m_Name: Staff Observations Button
+  m_Name: Staff Conversation Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7763,11 +7460,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1053794531}
+  - {fileID: 1590954975}
   m_Father: {fileID: 1569607751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205, y: -280}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &513605360
@@ -7790,7 +7488,7 @@ MonoBehaviour:
   m_ChildAlignment: 1
   m_Spacing: 10
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -7971,98 +7669,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &527498126
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 527498127}
-  - component: {fileID: 527498130}
-  - component: {fileID: 527498129}
-  - component: {fileID: 527498128}
-  m_Layer: 5
-  m_Name: Header
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &527498127
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527498126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 465826131}
-  - {fileID: 825476285}
-  m_Father: {fileID: 646001165}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &527498128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527498126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &527498129
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527498126}
-  m_CullTransparentMesh: 1
---- !u!114 &527498130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527498126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a038ac2bbc29add4ab2cf5cdf7e188e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dragRectTransform: {fileID: 646001165}
-  canvas: {fileID: 1551250928}
 --- !u!1 &530707754
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,155 +7784,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1053794531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 30, y: -30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &530724614
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 530724615}
-  m_Layer: 5
-  m_Name: Sliding Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &530724615
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530724614}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 419241239}
-  m_Father: {fileID: 1116957383}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &532905610
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 532905611}
-  - component: {fileID: 532905614}
-  - component: {fileID: 532905613}
-  - component: {fileID: 532905612}
-  m_Layer: 5
-  m_Name: Scroll View
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &532905611
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532905610}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 290939298}
-  - {fileID: 1116957383}
-  m_Father: {fileID: 1189081839}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &532905612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532905610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Content: {fileID: 1639105837}
-  m_Horizontal: 0
-  m_Vertical: 1
-  m_MovementType: 2
-  m_Elasticity: 0.1
-  m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
-  m_Viewport: {fileID: 290939298}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 1116957384}
-  m_HorizontalScrollbarVisibility: 2
-  m_VerticalScrollbarVisibility: 2
-  m_HorizontalScrollbarSpacing: -3
-  m_VerticalScrollbarSpacing: -3
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &532905613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532905610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &532905614
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532905610}
-  m_CullTransparentMesh: 1
 --- !u!1 &537102455
 GameObject:
   m_ObjectHideFlags: 0
@@ -8340,7 +7802,7 @@ GameObject:
   - component: {fileID: 537102458}
   - component: {fileID: 537102457}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8443,7 +7905,7 @@ GameObject:
   - component: {fileID: 548452306}
   - component: {fileID: 548452305}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8603,10 +8065,10 @@ RectTransform:
   - {fileID: 734702433}
   m_Father: {fileID: 816527189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: 0}
-  m_SizeDelta: {x: 760, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &551549424
 MonoBehaviour:
@@ -8713,6 +8175,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 400560802}
+  fileWithoutHints: "Long ago, European scientists were baffled by a preserved creature
+    they thought was an elaborate hoax. The creature is described as semi-aquatic,
+    with a duck-like bill, a beaver-like tail, and webbed feet (Australian Government,
+    2016). Yet if its Frankenstein-like appearance wasn\u2019t enough, its hunting
+    behaviour and reproductive abilities were even stranger. \n\nTheir duck-like
+    bills help them hunt in complete darkness, without sight or sound, by sensing
+    electric fields generated by muscle movements in buried prey (A.M.N.H., 2024).
+    They are biofluorescent and glow cyan and green under UV light, which may help
+    them camouflage from predators (Ner, 2020).\n\nAlthough they are mammals, the
+    females lay eggs (A.M.N.H., 2024). They even produce milk, but they have no nipples
+    for babies to nurse from. Males possess venomous spurs on their hind legs. Their
+    venom can cause severe and prolonged pain in humans, making them one of the few
+    venomous mammals (Australian Government, 2016).\n\nToday is your chance to adopt
+    one of these strange creatures and help secure this freak of nature\u2019s life.
+    Adopt a Platypus today to help preserve this threatened species\u2019s way of
+    life.\n\nAt one point in the past, research showed that unquestioning compliance
+    could lead to blissful satisfaction; however, evolving psychoanalysis later found
+    that these two phenomena were not actually as closely linked as previously thought.\n\nHere
+    at the Office of Verified Truth, we\u2019re committed to not repeating the mistakes
+    of the past and to continually striving for a better tomorrow for our company,
+    our family, and our society as a whole.\n"
+  fileWithHints: "Long ago, European scientists were baffled by a preserved creature
+    they thought was an elaborate hoax. The creature is described as semi-aquatic,
+    with a duck-like bill, a beaver-like tail, and webbed feet <b>(Australian Government,
+    2016)</b>. Yet if its Frankenstein-like appearance wasn\u2019t enough, its hunting
+    behaviour and reproductive abilities were even stranger. \r\n\r\nTheir duck-like
+    bills help them hunt in complete darkness, without sight or sound, by sensing
+    electric fields generated by muscle movements in buried prey <b>(A.M.N.H., 2024)</b>.
+    They are biofluorescent and glow cyan and green under UV light, which may help
+    them camouflage from predators <b>(Ner, 2020)</b>.\r\n\r\nAlthough they are mammals,
+    the females lay eggs <b>(A.M.N.H., 2024)</b>. They even produce milk, but they
+    have no nipples for babies to nurse from. Males possess venomous spurs on their
+    hind legs. Their venom can cause severe and prolonged pain in humans, making
+    them one of the few venomous mammals <b>(Australian Government, 2016)</b>.\r\n\r\nToday
+    is your chance to adopt one of these strange creatures and help secure this freak
+    of nature\u2019s life. Adopt a <b>Platypus</b> today to help preserve this threatened
+    species\u2019s way of life."
 --- !u!114 &559144654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8887,10 +8386,10 @@ RectTransform:
   - {fileID: 1315666741}
   m_Father: {fileID: 1261841419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 380, y: 0}
+  m_SizeDelta: {x: 760, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &576742033
 MonoBehaviour:
@@ -9346,7 +8845,7 @@ MonoBehaviour:
   m_Spacing: 4
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -9526,13 +9025,13 @@ MonoBehaviour:
     (2024). Monotremes. The Australian Museum of Natural History.\r\nAustralian Government.
     (2016). Platypus | discovering wildlife.\r\nNer, D. (2020). Biofluorescence in
     Ornithorhynchus anatinus. Mammalia.\r\n"
-  nameText: {fileID: 582348565}
-  requestTitle: {fileID: 263703437}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: 
   index: 5
   waitTime: 2
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -9889,93 +9388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623461406}
   m_CullTransparentMesh: 1
---- !u!1 &646001164
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 646001165}
-  - component: {fileID: 646001168}
-  - component: {fileID: 646001167}
-  - component: {fileID: 646001166}
-  m_Layer: 5
-  m_Name: YouTube Video
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &646001165
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646001164}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 527498127}
-  - {fileID: 1189081839}
-  m_Father: {fileID: 7708851}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 269, y: -163}
-  m_SizeDelta: {x: 760, y: 450}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &646001166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646001164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a33731f0dd91114e80110acb8dec1a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 1639105838}
---- !u!114 &646001167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646001164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
---- !u!222 &646001168
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646001164}
-  m_CullTransparentMesh: 1
 --- !u!1 &651956631
 GameObject:
   m_ObjectHideFlags: 0
@@ -9989,12 +9401,12 @@ GameObject:
   - component: {fileID: 651956634}
   - component: {fileID: 651956633}
   m_Layer: 5
-  m_Name: Notification to all 6/12 staff members
+  m_Name: Notification to all staff members
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &651956632
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10029,6 +9441,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 218592348}
+  fileWithoutHints: "Message to all 6/12 gas station employees,\n\nHey everyone,
+    this is your manager, Derek. I\u2019ve heard several complaints from customers
+    and staff that the slushy machines are old and no longer freeze before opening.
+    While this site doesn\u2019t have the funds to buy a new machine, I watched an
+    interesting YouTube video from a channel called Be Smart (2026) that says heating
+    something up can make it freeze faster.\n\nNow, I know you can\u2019t just believe
+    everything you see on the internet, so I did a quick search and found a research
+    paper that describes this \u201CMpemba effect\u201D (Burridge & Hallstadius,
+    2020), so it seems real.\n\nAnd so it occurred to me that if heating water always
+    makes it freeze faster, then heating our slushies before we put them in the machine
+    will also make them freeze faster, right? \n\nSo from now on, when you\u2019re
+    on opening shift, please heat the slushy liquid to near-boiling before putting
+    it in the machine and turning it on. If you do it right, I don\u2019t expect
+    to see any more complaints about this issue.\n\nYour direct supervisor and manager,\nDerek"
+  fileWithHints: "Message to all 6/12 gas station employees,\r\n\r\nHey everyone,
+    this is your manager, Derek. I\u2019ve heard several complaints from customers
+    and staff that the slushy machines are old and no longer freeze before opening.
+    While this site doesn\u2019t have the funds to buy a new machine, I watched an
+    interesting YouTube video from a channel called <b>Be Smart (2026)</b> that says
+    heating something up can make it freeze faster.\r\n\r\nNow, I know you can\u2019t
+    just believe everything you see on the internet, so I did a quick search and
+    found a research paper that describes this <b>\u201CMpemba effect\u201D (Burridge
+    & Hallstadius, 2020)</b>, so it seems real.\r\n\r\nAnd so it occurred to me that
+    if heating water <b>always</b> makes it freeze faster, then heating our slushies
+    before we put them in the machine will also make them freeze faster, right? \r\n\r\nSo
+    from now on, when you\u2019re on opening shift, please heat the slushy liquid
+    to near-boiling before putting it in the machine and turning it on. If you do
+    it right, I don\u2019t expect to see any more complaints about this issue.\r\n\r\nYour
+    direct supervisor and manager,\r\nDerek\r\n"
 --- !u!114 &651956634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10232,10 +9673,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 146398583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 66, y: -50}
+  m_SizeDelta: {x: 132, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679979007
 MonoBehaviour:
@@ -10504,7 +9945,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -262.81}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &712936104
 MonoBehaviour:
@@ -10526,12 +9967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Monotremes are mammals that lay eggs instead of giving birth to live young.
-    Another unusual trait shared by monotremes is electrolocation, the ability to
-    sense and locate the electrical fields living things emit when their muscles
-    contract. For example, the platypus uses electrolocation to detect prey in water
-    while its eyes, ears, and nostrils are closed. Its duck-like bill contains thousands
-    of sensory receptors that detect tiny electrical signals generated by prey.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11115,7 +10551,7 @@ RectTransform:
   m_Father: {fileID: 1672676895}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11170,7 +10606,7 @@ GameObject:
   - component: {fileID: 757058896}
   - component: {fileID: 757058895}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11273,7 +10709,7 @@ GameObject:
   - component: {fileID: 760715436}
   - component: {fileID: 760715435}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11411,7 +10847,7 @@ GameObject:
   - component: {fileID: 763962781}
   - component: {fileID: 763962780}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11537,10 +10973,10 @@ RectTransform:
   - {fileID: 1707612218}
   m_Father: {fileID: 651956632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 380, y: 0}
+  m_SizeDelta: {x: 760, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &764523004
 MonoBehaviour:
@@ -11763,9 +11199,9 @@ RectTransform:
   m_Father: {fileID: 1434992378}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -7, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &779112161
 MonoBehaviour:
@@ -11851,7 +11287,7 @@ RectTransform:
   m_Father: {fileID: 898788141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12098,6 +11534,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 1731500381}
+  fileWithoutHints: "The platypus (Ornithorhynchus anatinus) sounds like an animal
+    assembled from several unrelated species, yet it is entirely real. Native to
+    Australia, this furry, semi-aquatic mammal has a duck-like bill, a beaver-like
+    tail, and webbed feet. It is one of only five monotreme species still alive today.\n\nMales
+    have venomous spurs on their hind legs, and the venom can cause severe, prolonged
+    pain in humans, making the platypus one of the very few venomous mammals.\n\nFemales
+    are just as remarkable: instead of giving birth to live young, they lay eggs.
+    The surprises don't stop there. Female platypuses produce milk to feed their
+    babies, even though they have no nipples. Instead, the milk seeps through pores
+    in their skin, and the young drink it from their mother\u2019s fur."
+  fileWithHints: "<b>The platypus</b> (Ornithorhynchus anatinus) sounds like an animal
+    assembled from several unrelated species, yet it is entirely real. Native to
+    Australia, this furry, <b>semi-aquatic mammal has a duck-like bill, a beaver-like
+    tail, and webbed feet</b>. It is one of only five monotreme species still alive
+    today.\r\n<b>Males have venomous spurs on their hind legs</b>, and the venom
+    can cause severe, prolonged pain in humans, making the platypus one of the very
+    few venomous mammals.\n\r\n<b>Females are just as remarkable: instead of giving
+    birth to live young, they lay eggs</b>. The surprises don't stop there. Female
+    platypuses produce milk to feed their babies, even though they have no nipples.
+    Instead, the milk seeps through pores in their skin, and the young drink it from
+    their mother\u2019s fur.\r\n"
 --- !u!114 &816527191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12164,10 +11621,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 399904413}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 28}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 66, y: -118}
+  m_SizeDelta: {x: 132, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &818404349
 MonoBehaviour:
@@ -12406,141 +11863,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825314088}
   m_CullTransparentMesh: 1
---- !u!1 &825476284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 825476285}
-  - component: {fileID: 825476289}
-  - component: {fileID: 825476288}
-  - component: {fileID: 825476287}
-  - component: {fileID: 825476286}
-  m_Layer: 5
-  m_Name: close button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &825476285
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825476284}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 527498127}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: 40, y: 40}
-  m_Pivot: {x: 1, y: 0.5}
---- !u!114 &825476286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825476284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 825476288}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &825476287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825476284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cdd4852c712bc2408745d68313960ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _closeButton: {fileID: 0}
-  targetWindow: {fileID: 646001164}
---- !u!114 &825476288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825476284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0f3ef4acb1fd5ce4bbde1049b19dbb3c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &825476289
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825476284}
-  m_CullTransparentMesh: 1
 --- !u!1 &834722689
 GameObject:
   m_ObjectHideFlags: 0
@@ -12554,7 +11876,7 @@ GameObject:
   - component: {fileID: 834722692}
   - component: {fileID: 834722691}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12938,7 +12260,7 @@ GameObject:
   - component: {fileID: 902804009}
   - component: {fileID: 902804008}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13580,7 +12902,7 @@ RectTransform:
   m_Father: {fileID: 1235559142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13657,7 +12979,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 125, y: 28}
+  m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948179737
 MonoBehaviour:
@@ -13795,7 +13117,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -380}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &981420559
 MonoBehaviour:
@@ -13817,12 +13139,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Mpemba effect is the phenomenon where hotter water can sometimes freeze
-    faster than colder water. This study found that the effect can be reproduced
-    by increasing the number of nucleation sites in the warmer sample''s container.
-    Surprisingly, hot water could still freeze faster even when it required over
-    50% more energy to cool. However, results vary greatly depending on the liquid''s
-    exact chemistry, and this should not be taken as a universally applicable effect. '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14193,7 +13510,7 @@ GameObject:
   - component: {fileID: 1050018067}
   - component: {fileID: 1050018066}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14320,9 +13637,9 @@ RectTransform:
   - {fileID: 1382237686}
   m_Father: {fileID: 513605359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 195, y: -40}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 310, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1053794532
@@ -14528,7 +13845,7 @@ GameObject:
   - component: {fileID: 1071055361}
   - component: {fileID: 1071055360}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14753,132 +14070,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111253142}
-  m_CullTransparentMesh: 1
---- !u!1 &1116957382
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1116957383}
-  - component: {fileID: 1116957386}
-  - component: {fileID: 1116957385}
-  - component: {fileID: 1116957384}
-  m_Layer: 5
-  m_Name: Scrollbar Vertical
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1116957383
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116957382}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 530724615}
-  m_Father: {fileID: 532905611}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
-  m_Pivot: {x: 1, y: 1}
---- !u!114 &1116957384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116957382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 419241240}
-  m_HandleRect: {fileID: 419241239}
-  m_Direction: 2
-  m_Value: 1
-  m_Size: 0.88380325
-  m_NumberOfSteps: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1116957385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116957382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1116957386
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116957382}
   m_CullTransparentMesh: 1
 --- !u!1 &1150210987
 GameObject:
@@ -15133,13 +14324,13 @@ MonoBehaviour:
     and may affect any future career opportunities to which you may otherwise be
     entitled.\r\n\r\nWishing you a prosperous career and future,\r\nSir Manager\u2019s
     Secretary.\r\n"
-  nameText: {fileID: 1980085430}
-  requestTitle: {fileID: 760715435}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: 
   index: 4
   waitTime: 2
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &1158948482
 GameObject:
   m_ObjectHideFlags: 0
@@ -15435,10 +14626,10 @@ RectTransform:
   - {fileID: 372842497}
   m_Father: {fileID: 559144652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: 0}
-  m_SizeDelta: {x: 760, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1176494465
 MonoBehaviour:
@@ -15627,82 +14818,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1189081838
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1189081839}
-  - component: {fileID: 1189081841}
-  - component: {fileID: 1189081840}
-  m_Layer: 5
-  m_Name: Visuals
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1189081839
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189081838}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 532905611}
-  m_Father: {fileID: 646001165}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 400}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1189081840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189081838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1189081841
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189081838}
-  m_CullTransparentMesh: 1
 --- !u!1 &1208466946
 GameObject:
   m_ObjectHideFlags: 0
@@ -15756,6 +14871,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 712936104}
+  fileWithoutHints: Monotremes are mammals that lay eggs instead of giving birth
+    to live young. Another unusual trait shared by monotremes is electrolocation,
+    the ability to sense and locate the electrical fields living things emit when
+    their muscles contract. For example, the platypus uses electrolocation to detect
+    prey in water while its eyes, ears, and nostrils are closed. Its duck-like bill
+    contains thousands of sensory receptors that detect tiny electrical signals generated
+    by prey.
+  fileWithHints: <b>Monotremes are mammals that lay eggs instead of giving birth
+    to live young</b>. Another unusual trait shared by monotremes is electrolocation,
+    the ability to sense and locate the electrical fields living things emit when
+    their muscles contract. <b>For example, the platypus uses electrolocation to
+    detect prey in water while its eyes, ears, and nostrils are closed. Its duck-like
+    bill contains thousands of sensory receptors that detect tiny electrical signals
+    generated by prey.</b>
 --- !u!114 &1208466949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15802,7 +14931,7 @@ GameObject:
   - component: {fileID: 1227634012}
   - component: {fileID: 1227634011}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16050,6 +15179,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 1451139974}
+  fileWithoutHints: "Welcome to the Office of Verified Truth, sometimes known as
+    O.V.T. for short.\n\nYou\u2019ve joined a team of honourable, hardworking analysts
+    dedicated to helping stop the infodemic plague our society is facing.\nWhile
+    you do have superiors here, our company believes in the corporate family model,
+    which encourages equality. So please don\u2019t assume it\u2019s your responsibility
+    to simply complete all work handed down by your superiors without question.\n\nAt
+    one point in the past, research showed that unquestioning compliance could lead
+    to blissful satisfaction; however, evolving psychoanalysis later found that these
+    two phenomena were not actually as closely linked as previously thought.\n\nHere
+    at the Office of Verified Truth, we\u2019re committed to not repeating the mistakes
+    of the past and to continually striving for a better tomorrow for our company,
+    our family, and our society as a whole."
+  fileWithHints: 
 --- !u!1 &1242421270
 GameObject:
   m_ObjectHideFlags: 0
@@ -16082,9 +15224,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1569607751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205, y: -35}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1242421272
@@ -16257,10 +15399,10 @@ RectTransform:
   - {fileID: 1762853588}
   m_Father: {fileID: 1208466947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: 0}
-  m_SizeDelta: {x: 760, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1250044227
 MonoBehaviour:
@@ -16347,10 +15489,10 @@ RectTransform:
   - {fileID: 1461149627}
   m_Father: {fileID: 501282943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 400}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 380, y: -250}
+  m_SizeDelta: {x: 760, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1251252450
 MonoBehaviour:
@@ -16560,7 +15702,7 @@ RectTransform:
   m_Father: {fileID: 132340751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16615,12 +15757,12 @@ GameObject:
   - component: {fileID: 1261841421}
   - component: {fileID: 1261841420}
   m_Layer: 5
-  m_Name: Staff observations
+  m_Name: Staff Conversation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1261841419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16655,6 +15797,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 133564183}
+  fileWithoutHints: "Conversation between Tom and Eric, employees at a 6/12 gas station.\n{This
+    source cannot be verified. Proceed with caution.}\n\nTom: Hey, Eric, did you
+    get the manager\u2019s message? \nEric: I did. Sounds ridiculous, right?\nTom:
+    Yeah, and I don\u2019t think it\u2019s true.\nEric: Why do you say that? The
+    video seemed legit, and there\u2019s even a scientific paper, isn\u2019t there?\nTom:
+    Yeah, but I just had my shift, and I did as the manager said, but it didn\u2019t
+    help at all. In fact, it made the slushies take longer to make.\nEric: I wonder
+    why. Hang on. My dad has access to that O.V.T. AI-Checker. I\u2019ll ask it and
+    see if this is real or not.\nTom: Thanks, man. No one else seems to believe me,
+    and the manager just blamed me and said I did it wrong.\nTom: I don't think Derek's
+    lying to us. I reckon he just watched that video and misunderstood what it was
+    actually saying. \n"
+  fileWithHints: "Conversation between Tom and Eric, employees at a 6/12 gas station.\r\n{This
+    source cannot be verified. Proceed with caution.}\r\n\r\nTom: Hey, Eric, did
+    you get the manager\u2019s message? \r\nEric: I did. Sounds ridiculous, right?\r\nTom:
+    Yeah, and I don\u2019t think it\u2019s true.\r\nEric: Why do you say that? The
+    video seemed legit, and there\u2019s even a scientific paper, isn\u2019t there?\r\nTom:
+    Yeah, but I just had my shift, and I did as the manager said, <b>but it didn\u2019t
+    help at all</b>. In fact, it made the slushies take longer to make.\r\nEric:
+    I wonder why. Hang on. My dad has access to that O.V.T. AI-Checker. I\u2019ll
+    ask it and see if this is real or not.\r\nTom: Thanks, man. No one else seems
+    to believe me, and the manager just blamed me and said I did it wrong.\r\nTom:
+    <b>I don't think Derek's lying to us. I reckon he just watched that video and
+    misunderstood what it was actually saying.</b> "
 --- !u!114 &1261841421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16913,7 +16079,7 @@ GameObject:
   - component: {fileID: 1291638232}
   - component: {fileID: 1291638231}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17598,13 +16764,13 @@ MonoBehaviour:
     to simply complete all work handed down by your superiors without question\u201D
     (O.V.T., 2026, para. 3). As such, you have no right to complain.\n\nReference:\nO.V.T.
     (2026). Employee manual: Introductory chapter. [Manual]"
-  nameText: {fileID: 623461408}
-  requestTitle: {fileID: 1227634011}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: 
   index: 3
   waitTime: 2
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &1340129881
 GameObject:
   m_ObjectHideFlags: 0
@@ -17950,9 +17116,9 @@ RectTransform:
   m_Father: {fileID: 844577087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -7, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1376099219
 MonoBehaviour:
@@ -18120,9 +17286,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1053794531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 280, y: -30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1387855120
@@ -18178,6 +17344,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 2039348625}
+  fileWithoutHints: "Abstract\nIn this report, we studied three Ornithorhynchus anatinus
+    specimens under visible and ultraviolet light(UV). The animal\u2019s pelts appeared
+    uniformly brown under visible light and green or cyan under UV light due to fluorescent
+    wavelengths. Our observations are the first report of biofluorescence in monotreme
+    mammals. \n\nFurther research is required to determine the true nature of this
+    trait. However, three theories stand: first, it may help them blend into the
+    low-light environment of a moonlit river; second, it might reduce contrast against
+    UV-sensitive predators; and third, it could simply be an ancient vestigial trait."
+  fileWithHints: "Abstract\r\nIn this report, we studied three Ornithorhynchus anatinus
+    specimens under visible and ultraviolet light(UV). The animal\u2019s pelts appeared
+    uniformly brown under visible light and <b>green or cyan under UV light due to
+    fluorescent wavelengths</b>. Our observations are the first report of biofluorescence
+    in monotreme mammals. \n\r\nFurther research is required to determine the true
+    nature of this trait. However, three theories stand: first, it may help them
+    blend into the low-light environment of a moonlit river; second, <b>it might
+    reduce contrast against UV-sensitive predators</b>; and third, it could simply
+    be an ancient vestigial trait.\r\n"
 --- !u!114 &1387855123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18320,10 +17503,10 @@ RectTransform:
   - {fileID: 2128325031}
   m_Father: {fileID: 651956632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 400}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 380, y: -250}
+  m_SizeDelta: {x: 760, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1398477742
 MonoBehaviour:
@@ -19195,7 +18378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc7e4668d5e66446b840e1825c1ee0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responseType: 1
+  responseType: 3
   emailName: Manager
   header: Training 1
   requestMessage: "Hey, can you verify the information in this message from my manager?
@@ -19209,13 +18392,23 @@ MonoBehaviour:
     Mpemba effect to scientific outreach and engagement. Proc. R. Soc. A, 476(2241),
     20190829. https://doi.org/10.1098/rspa.2019.0829\r\nTom. (2026). Conversation
     between Tom and Eric. [Discussion]. ChatApp.\r\n"
-  nameText: {fileID: 905905188}
-  requestTitle: {fileID: 902804008}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: "Hey, can you verify the information in this message from
+    my manager? I work at a 6/12 petrol station with a mate of mine called Tom, and
+    he just tried this and said it didn\u2019t work, and the manager thinks he just
+    did it wrong. Can you tell me if the Mpemba effect is real, and whether it <b>always</b>
+    works?\r\n\r\nThe Message in question:\r\nNotification to all 6/12 staff members\r\n\r\nReferences\r\nBe
+    Smart. (2026). The Very Weird Reason Hot Water Freezes Faster [Video]. YouTube.
+    https://www.youtube.com/watch?v=KLmtn_xwgS4\r\nBurridge, H. C., & Hallstadius,
+    O. (2020). Observing the Mpemba effect with minimal bias and the value of the
+    Mpemba effect to scientific outreach and engagement. Proc. R. Soc. A, 476(2241),
+    20190829. https://doi.org/10.1098/rspa.2019.0829\r\nTom. (2026). Conversation
+    between Tom and Eric. [Discussion]. ChatApp.\r\n"
   index: 6
   waitTime: 2
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &1443480877
 GameObject:
   m_ObjectHideFlags: 0
@@ -19481,7 +18674,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -67.32999}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1451139973
 MonoBehaviour:
@@ -19908,9 +19101,9 @@ RectTransform:
   m_Father: {fileID: 2128325031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -7, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1495680063
 MonoBehaviour:
@@ -19998,9 +19191,9 @@ RectTransform:
   m_Father: {fileID: 380024951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -7, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1510781705
 MonoBehaviour:
@@ -20266,10 +19459,10 @@ RectTransform:
   - {fileID: 1041478693}
   m_Father: {fileID: 1208466947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -250}
-  m_SizeDelta: {x: 760, y: 400}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1548470668
 MonoBehaviour:
@@ -20444,6 +19637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingButton: {fileID: 1719825369}
   menuUI: {fileID: 1569607748}
+  isToggleHints: 0
   fontSize: 20
 --- !u!4 &1565075759
 Transform:
@@ -20509,7 +19703,10 @@ MonoBehaviour:
     EmailList: []
     RequestList:
     - {fileID: 1441713565}
-    ArticleList: []
+    ArticleList:
+    - {fileID: 1952085809}
+    - {fileID: 508857853}
+    - {fileID: 1586672398}
   RequestCompleted: 0
   previousIndex: 0
 --- !u!1 &1569607748
@@ -20531,7 +19728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1569607749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20588,7 +19785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -745, y: 90}
+  m_AnchoredPosition: {x: -744.9999, y: 90}
   m_SizeDelta: {x: -1510, y: 500}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1569607752
@@ -20606,6 +19803,9 @@ MonoBehaviour:
   fontIncrease: {fileID: 1382237683}
   fontDecrease: {fileID: 530707755}
   changeValue: 2
+  hintsButton: {fileID: 1590954976}
+  hintsText: {fileID: 1897212665}
+  toggleHints: 0
 --- !u!114 &1569607753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20665,7 +19865,7 @@ RectTransform:
   m_Father: {fileID: 1459496068}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -20825,7 +20025,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586672398}
   m_CullTransparentMesh: 1
---- !u!1 &1639105836
+--- !u!1 &1590954974
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20833,192 +20033,146 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1639105837}
-  - component: {fileID: 1639105840}
-  - component: {fileID: 1639105839}
-  - component: {fileID: 1639105838}
+  - component: {fileID: 1590954975}
+  - component: {fileID: 1590954979}
+  - component: {fileID: 1590954978}
+  - component: {fileID: 1590954977}
+  - component: {fileID: 1590954976}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Hints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1639105837
+--- !u!224 &1590954975
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639105836}
+  m_GameObject: {fileID: 1590954974}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 290939298}
+  m_Children:
+  - {fileID: 1897212664}
+  m_Father: {fileID: 513605359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1639105838
+  m_SizeDelta: {x: 310, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1590954976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639105836}
+  m_GameObject: {fileID: 1590954974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1590954978}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1590954977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590954974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &1590954978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590954974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'https://www.youtube.com/watch?v=KLmtn_xwgS4
-
-    
-
-    Summery:
-
-    The
-    video "Why Can Hot Water Sometimes Freeze Faster?" by Be Smart explains the Mpemba
-    effect, the surprising phenomenon in which hot water can sometimes freeze faster
-    than cold water.
-
-    
-
-    The effect first drew scientific attention in 1963,
-    when a Tanzanian student named Erasto Mpemba noticed that his hot ice cream mixture
-    froze faster than his classmates'' cooler mixtures.
-
-    
-
-    Scientists have
-    found that the effect is difficult to reproduce because many factors can affect
-    freezing, including evaporation, convection, dissolved gases, and supercooling.
-
-    
-
-    The
-    video also explains that the Mpemba effect is not limited to water. Similar effects
-    have been observed in materials, magnets, and even quantum physics.
-
-    
-
-    Scientists
-    suggest that systems starting farther from equilibrium can sometimes reach a
-    stable state faster by following different pathways.
-
-    
-
-    Overall, the
-    video shows that hot water does not always freeze faster than cold water, but
-    under certain conditions it can. It also demonstrates how everyday observations
-    can lead to important scientific discoveries.
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 17
-  m_fontSizeBase: 17
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 8
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 10, y: 10, z: 10, w: 10}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1639105839
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1590954979
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639105836}
+  m_GameObject: {fileID: 1590954974}
   m_CullTransparentMesh: 1
---- !u!114 &1639105840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639105836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
-  m_VerticalFit: 2
 --- !u!1 &1647903605
 GameObject:
   m_ObjectHideFlags: 0
@@ -21152,7 +20306,7 @@ GameObject:
   - component: {fileID: 1661028435}
   - component: {fileID: 1661028434}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21831,7 +20985,7 @@ RectTransform:
   m_Father: {fileID: 1851016775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -21984,7 +21138,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -165.07}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1731500381
 MonoBehaviour:
@@ -22939,6 +22093,143 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876968556}
   m_CullTransparentMesh: 1
+--- !u!1 &1897212663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897212664}
+  - component: {fileID: 1897212666}
+  - component: {fileID: 1897212665}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1897212664
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897212663}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1590954975}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1897212665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897212663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Hints : OFF'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1897212666
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897212663}
+  m_CullTransparentMesh: 1
 --- !u!1 &1932325682
 GameObject:
   m_ObjectHideFlags: 0
@@ -22974,9 +22265,9 @@ RectTransform:
   m_Father: {fileID: 1461149627}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -7, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1932325684
 MonoBehaviour:
@@ -23064,10 +22355,10 @@ RectTransform:
   - {fileID: 184261790}
   m_Father: {fileID: 501282943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 380, y: 0}
+  m_SizeDelta: {x: 760, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1935486319
 MonoBehaviour:
@@ -23134,7 +22425,7 @@ GameObject:
   - component: {fileID: 1952085812}
   - component: {fileID: 1952085811}
   m_Layer: 5
-  m_Name: Notification to all 6/12 staff members Button
+  m_Name: Notification to all staff members Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23271,8 +22562,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 269649288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.22228354}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23533,8 +22824,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1586584709}
   m_HandleRect: {fileID: 1586584708}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9258808
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -23890,13 +23181,13 @@ MonoBehaviour:
 
     O.V.T.
     (2026). Employee manual: Introductory chapter. [Manual]'
-  nameText: {fileID: 166964774}
-  requestTitle: {fileID: 548452305}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: 
   index: 3
   waitTime: 2
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &2030164528
 GameObject:
   m_ObjectHideFlags: 0
@@ -24005,10 +23296,10 @@ RectTransform:
   - {fileID: 499603506}
   m_Father: {fileID: 1261841419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 400}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 380, y: -250}
+  m_SizeDelta: {x: 760, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031224238
 MonoBehaviour:
@@ -24160,7 +23451,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -165.07}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2039348625
 MonoBehaviour:
@@ -24182,14 +23473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Abstract\r\nIn this report, we studied three Ornithorhynchus anatinus
-    specimens under visible and ultraviolet light(UV). The animal\u2019s pelts appeared
-    uniformly brown under visible light and green or cyan under UV light due to fluorescent
-    wavelengths. Our observations are the first report of biofluorescence in monotreme
-    mammals. \n\r\nFurther research is required to determine the true nature of this
-    trait. However, three theories stand: first, it may help them blend into the
-    low-light environment of a moonlit river; second, it might reduce contrast against
-    UV-sensitive predators; and third, it could simply be an ancient vestigial trait."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24315,10 +23599,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 399904413}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 66, y: -50}
+  m_SizeDelta: {x: 132, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042337928
 MonoBehaviour:
@@ -24750,17 +24034,17 @@ MonoBehaviour:
     and terminology,\nmake sure you remember these three vital points:\n\n1. True
     Information -- accurate, verified, and factual data backed by verifiable evidence
     and reliable sources\n\n2. Misinformation -- false or inaccurate information
-    shared unintentionally, without intent to cause harm or deceive.\n\n3. Disinformation
-    -- false or misleading information that is deliberately created and spread to
-    deceive people or cause harm.\n\nFrom a completely trustworthy, superior,\nSir.
-    Manager"
-  nameText: {fileID: 4385182146089471647}
-  requestTitle: {fileID: 4498540935327707425}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+    shared <b>unintentionally, without intent</b> to cause harm or deceive.\n\n3.
+    Disinformation -- false or misleading information that is <b>deliberately created
+    and spread</b> to deceive people or cause harm.\n\nFrom a completely trustworthy,
+    superior,\nSir. Manager"
+  requestMessageWithHints: 
   index: 1
   waitTime: 7
+  nameText: {fileID: 0}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!114 &612007100629790569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24818,7 +24102,7 @@ GameObject:
   - component: {fileID: 7549335863770502103}
   - component: {fileID: 4748754884183380232}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24844,7 +24128,7 @@ GameObject:
   - component: {fileID: 8987637164505833339}
   - component: {fileID: 4498540935327707425}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25875,13 +25159,13 @@ MonoBehaviour:
     this assignment with the seriousness it deserves; your continued employment will
     be reviewed against your performance metrics upon completion of this task.\n\nThank
     you for your mandatory compliance,\nThe Boss"
-  nameText: {fileID: 5493019754712275163}
-  requestTitle: {fileID: 5660581172935829349}
-  hasResponded: 0
-  profileImage: {fileID: 0}
-  profile: {fileID: 0}
+  requestMessageWithHints: 
   index: 0
   waitTime: 5
+  nameText: {fileID: 5493019754712275163}
+  subHeader: {fileID: 0}
+  profileImage: {fileID: 0}
+  profile: {fileID: 0}
 --- !u!1 &8662466906229131293
 GameObject:
   m_ObjectHideFlags: 0
@@ -25895,7 +25179,7 @@ GameObject:
   - component: {fileID: 1739738869809546643}
   - component: {fileID: 3532683412332513100}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25965,7 +25249,7 @@ GameObject:
   - component: {fileID: 890283161297111359}
   - component: {fileID: 5660581172935829349}
   m_Layer: 5
-  m_Name: title header
+  m_Name: SubHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -20,19 +20,22 @@ public class OpenArticle : MonoBehaviour
     {
         foreach (Button button in articleGroup.GetComponentsInChildren<Button>())
         {
-            if (fileButtons.Exists(b => b.name == button.name)) return;
-            button.onClick.AddListener(()=> OpenFile(button.name));
-            button.name = button.name.Replace("Button", "").TrimEnd();
-           
-            
+            string cleanName = button.name.Replace("Button", "").TrimEnd();
+            if (fileButtons.Exists(b => b.name == button.name)) continue;
+
+            button.onClick.AddListener(() => OpenFile(cleanName));
             fileButtons.Add(button);
         }
     }
 
     private void OpenFile(string buttonName)
     {
-        GameObject file = canvasWindowsUI.transform.Find(buttonName).gameObject;
-        file.SetActive(true);
+        Transform target = canvasWindowsUI.transform.Find(buttonName);
+        if (target != null)
+        {
+            target.gameObject.SetActive(true);
+            target.SetAsLastSibling();
+        }
+        
     }
 }
-

@@ -16,7 +16,9 @@ public class RequestField : MonoBehaviour
         EventManager.OnRequestUpdate += UpdateRequest;
         EventManager.OnFontSizeUpdate += UpdateFontSize;
     }
-
+    
+    
+    
     
     private void UpdateRequest(string requestMessage, string requestHeader, ResponseType type)
     {

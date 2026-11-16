@@ -12,14 +12,15 @@
   <component name="ChangeListManager">
     <list default="true" id="db9f1b1b-f261-43b9-b267-586c2e68117d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Appraisal_Infodemic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Appraisal_Infodemic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EventManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArticleSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArticleSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NextRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NextRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/OpenArticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OpenArticle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Request.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Request.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RequestField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RequestField.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Response.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
@@ -32,14 +33,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/ArticleSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Response.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuToggle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EmailAndRequestManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseBound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NextRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WindowManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">

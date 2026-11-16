@@ -70,8 +70,12 @@ public class NextRequest : MonoBehaviour
 
         foreach (GameObject item in targetList[index].ArticleList)
         {
+            item.SetActive(true);
             var button = item.GetComponent<Button>();
-            button.interactable = true;
+            if(!button.interactable)
+            {
+                button.interactable = true;
+            }
         }
 
         foreach (GameObject item in targetList[index].RequestList)
@@ -86,8 +90,7 @@ public class NextRequest : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
     }
-
-
+    
     public void IncreaseCountOfRequestsDone()
     {
         Debug.Log("IncreaseCountOfRequestsDone");
