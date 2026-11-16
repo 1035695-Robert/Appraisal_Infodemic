@@ -8,7 +8,6 @@ public class DragWindow : MonoBehaviour, IDragHandler, IPointerDownHandler
 [SerializeField] Canvas canvas;
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("drag");
        dragRectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         WindowManager.instance.WindowBounds(dragRectTransform);
     }

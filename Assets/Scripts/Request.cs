@@ -25,22 +25,29 @@ public class Request : MonoBehaviour
     [SerializeField] private TextMeshProUGUI requestTitle;
 
     [Header("If Requests")] public bool hasResponded;
+   
+    [SerializeField] private Sprite profileImage;
+    [SerializeField] private Image profile;
 
-    [SerializeField] bool hasBeenOpened;
-    [SerializeField] private int index = 0;
-    [SerializeField] private float waitTime;
+    bool hasBeenCompleted;
+    [SerializeField] public int index = 0;
+    [SerializeField] public float waitTime;
+    
 
-
-    private void Awake()
-    {
+    private void OnEnable()
+    { 
+        profileImage = Resources.Load<Sprite>("Sprites/Profile/" + emailName + " Icon");
+        profile = transform.Find("Profile").gameObject.GetComponent<Image>();
+        if (profile != null || profileImage != null)
+        {
+            profile.sprite = profileImage;
+            profile.color = Color.white;
+        }
         nameText.text = emailName;
         requestTitle.text = header;
         requestbutton = GetComponent<Button>();
         hasResponded = false;
-    }
-
-    private void OnEnable()
-    {
+        
         requestbutton.onClick.AddListener(SelectedRequest);
         EventManager.OnFontSizeUpdate += OnFontChangeSize;
     }
@@ -55,19 +62,17 @@ public class Request : MonoBehaviour
         {
             WindowManager.instance.CloseWindow("Response Window");
             Debug.Log("this is an Email");
-            if (!hasBeenOpened)
+            if (!hasBeenCompleted)
             {
-                NextRequest.instance.ChecktoSendEmails(index, waitTime);
-                hasBeenOpened = true;
+                    NextRequest.instance.ChecktoSendEmails(index, waitTime);
+                    hasBeenCompleted = true;
             }
-
             return;
         }
-
+        
         if (hasResponded)
         {
             WindowManager.instance.CloseWindow("Response Window");
-
             return;
         }
 

@@ -42,14 +42,21 @@ public class Response : MonoBehaviour
     {
       Debug.Log("correct");
       targetRequest.hasResponded =  true;
+      NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
       gameObject.SetActive(false);
+
+     
     }
 
     private void Incorrect()
     {
         Debug.Log("incorrect");
         targetRequest.hasResponded =  true;
-        gameObject.SetActive(false);   }
+        NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
+        gameObject.SetActive(false);
+
+      
+    }
 
     private void OnDisable()
     {

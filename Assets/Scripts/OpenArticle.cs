@@ -23,7 +23,7 @@ public class OpenArticle : MonoBehaviour
             if (fileButtons.Exists(b => b.name == button.name)) return;
             button.onClick.AddListener(()=> OpenFile(button.name));
             button.name = button.name.Replace("Button", "").TrimEnd();
-            Debug.Log(button.name);
+           
             
             fileButtons.Add(button);
         }
@@ -31,10 +31,8 @@ public class OpenArticle : MonoBehaviour
 
     private void OpenFile(string buttonName)
     {
-      
         GameObject file = canvasWindowsUI.transform.Find(buttonName).gameObject;
         file.SetActive(true);
-
     }
 }
 
