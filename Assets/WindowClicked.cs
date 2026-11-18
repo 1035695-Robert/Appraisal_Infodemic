@@ -13,6 +13,7 @@ public class WindowClicked : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (WindowManager.instance.isMenuToggle) GameManager.instance.CloseMenu();
         dragRectTransform.SetAsLastSibling();
     }
 }
