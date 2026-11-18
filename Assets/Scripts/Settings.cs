@@ -58,6 +58,7 @@ public class Settings : MonoBehaviour
 
     private void PowerButton()
     {
+        Debug.LogError("App Closed");
         Application.Quit();
     }
 

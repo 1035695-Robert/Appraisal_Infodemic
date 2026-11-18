@@ -159,10 +159,12 @@
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
-      <option name="coreClr" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -183,6 +185,7 @@
       <workItem from="1791365348637" duration="10199000" />
       <workItem from="1791614296518" duration="100000" />
       <workItem from="1791614460263" duration="3112000" />
+      <workItem from="1794969750177" duration="8000" />
     </task>
     <servers />
   </component>
