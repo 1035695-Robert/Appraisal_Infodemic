@@ -12,13 +12,14 @@ public class Settings : MonoBehaviour
     [SerializeField] private Button fontIncrease;
     [SerializeField] private Button fontDecrease;
     [SerializeField] private int changeValue;
-    
+
     [SerializeField] private Button hintsButton;
     [SerializeField] private TextMeshProUGUI hintsText;
+    
+    [SerializeField] Button powerButton;
 
-    
     public bool toggleHints;
-    
+
 
     void Start()
     {
@@ -33,9 +34,10 @@ public class Settings : MonoBehaviour
     {
         fontIncrease.onClick.AddListener(() => FontSizeChange(+changeValue));
         fontDecrease.onClick.AddListener(() => FontSizeChange(-changeValue));
-        
+
         hintsButton.onClick.AddListener(HintsToggle);
-        HintsToggle();
+        
+        powerButton.onClick.AddListener(PowerButton);
     }
 
     private void FontSizeChange(int value)
@@ -47,17 +49,23 @@ public class Settings : MonoBehaviour
     }
 
     private void HintsToggle()
-    { 
+    {
         Debug.Log("hints toggle");
         hintsText.text = GameManager.instance.isToggleHints ? "Hints : OFF" : "Hints : ON";
-       GameManager.instance.isToggleHints = !GameManager.instance.isToggleHints;
-       EventManager.OnToggleHints?.Invoke();
+        GameManager.instance.isToggleHints = !GameManager.instance.isToggleHints;
+        EventManager.OnToggleHints?.Invoke();
+    }
 
+    private void PowerButton()
+    {
+        Application.Quit();
     }
 
     private void OnDisable()
     {
         fontIncrease.onClick.RemoveAllListeners();
         fontDecrease.onClick.RemoveAllListeners();
+        hintsButton.onClick.AddListener(HintsToggle);
+        powerButton.onClick.AddListener(PowerButton);
     }
 }

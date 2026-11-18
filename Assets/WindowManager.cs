@@ -69,6 +69,7 @@ public class WindowManager : MonoBehaviour
 
     #endregion
 
+    public bool isMenuToggle;
     [SerializeField] private RectTransform windowViewRect;
     private RectTransform _currentDragWindow;
     [SerializeField] private float padding = 0f;

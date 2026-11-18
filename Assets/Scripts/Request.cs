@@ -15,8 +15,8 @@ public class Request : MonoBehaviour
     [SerializeField] public int index = 0;
     [SerializeField] public float waitTime;
 
-    [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private TextMeshProUGUI subHeader;
+     private TextMeshProUGUI nameText;
+     private TextMeshProUGUI subHeader;
 
     public ResponseType Type => responseType;
     public string EmailName => emailName;
@@ -28,8 +28,9 @@ public class Request : MonoBehaviour
 
     public bool hasResponded { get; set; }
     public bool hasBeenCompleted { get; set; }
-    [SerializeField] private Sprite profileImage;
-    [SerializeField] private Image profile;
+    
+    private Sprite profileImage;
+    private Image profile;
 
     private void OnEnable()
     {
@@ -54,10 +55,11 @@ public class Request : MonoBehaviour
 
     public void SelectionRequest()
     {
+        if (WindowManager.instance.isMenuToggle)
+            GameManager.instance.CloseMenu();
+        
         if (EmailAndRequestManager.instance != null)
-        {
             EmailAndRequestManager.instance.SelectedRequest(this);
-        }
     }
 
     private void OnFontChangeSize()
