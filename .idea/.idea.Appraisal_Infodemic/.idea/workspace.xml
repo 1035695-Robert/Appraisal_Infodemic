@@ -12,8 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="db9f1b1b-f261-43b9-b267-586c2e68117d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Appraisal_Infodemic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Appraisal_Infodemic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OpenWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OpenWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WindowClicked.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WindowClicked.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WindowScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WindowScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Response.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

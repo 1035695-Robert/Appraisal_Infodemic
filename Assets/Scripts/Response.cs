@@ -24,7 +24,7 @@ public class Response : MonoBehaviour
     public Request targetRequest;
 
     public ResponseType responseType;
-
+    
     private void OnEnable()
     {
         this.transform.SetAsLastSibling();
@@ -44,6 +44,7 @@ public class Response : MonoBehaviour
     {
         Debug.Log("correct");
         targetRequest.hasResponded = true;
+        StatSlider.OnUpdateStats?.Invoke("Correct");
         NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
         gameObject.SetActive(false);
     }
@@ -52,6 +53,7 @@ public class Response : MonoBehaviour
     {
         Debug.Log("incorrect");
         targetRequest.hasResponded = true;
+        StatSlider.OnUpdateStats?.Invoke("Incorrect");
         NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
         gameObject.SetActive(false);
     }
