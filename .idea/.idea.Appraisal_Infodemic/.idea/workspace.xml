@@ -41,61 +41,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000033709" />
-      <entry key="MS500" value="1.0050765364525795" />
-      <entry key="S2" value="1.3157847177491595" />
-      <entry key="S5" value="2.178864719249688" />
-      <entry key="S10" value="3.249111383249313" />
-      <entry key="S30" value="5.526414593744467" />
-      <entry key="S60" value="7.134371264121055" />
-      <entry key="M2" value="8.972486818547232" />
-      <entry key="M5" value="14.817408968414442" />
-      <entry key="M10" value="32.401670142937746" />
-      <entry key="M15" value="61.09154305817053" />
-      <entry key="M30" value="174.27463991132203" />
-      <entry key="H1" value="379.35746230355323" />
-      <entry key="H2" value="689.5262800165572" />
-      <entry key="H4" value="1124.0706363865206" />
-      <entry key="D1" value="2358.4556481017007" />
-      <entry key="W1" value="2929.770927812751" />
+      <entry key="MS100" value="1.008608633717786" />
+      <entry key="MS500" value="1.3863555131992449" />
+      <entry key="S2" value="1.8439177922754237" />
+      <entry key="S5" value="2.6239991029796115" />
+      <entry key="S10" value="3.6413748400505876" />
+      <entry key="S30" value="5.109349624177695" />
+      <entry key="S60" value="6.198377325981141" />
+      <entry key="M2" value="7.97479583251755" />
+      <entry key="M5" value="12.015924019885594" />
+      <entry key="M10" value="22.534796540526756" />
+      <entry key="M15" value="39.671945221995436" />
+      <entry key="M30" value="122.27822675959953" />
+      <entry key="H1" value="311.7624172915819" />
+      <entry key="H2" value="628.5087801826234" />
+      <entry key="H4" value="1082.265905889478" />
+      <entry key="D1" value="2378.331951489415" />
+      <entry key="W1" value="2977.6966055508774" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.1836842578690977E-45" />
-      <entry key="MS500" value="1.169063142764049E-9" />
-      <entry key="S2" value="0.005847355468726247" />
-      <entry key="S5" value="0.12797279860881747" />
-      <entry key="S10" value="0.37107958698335103" />
-      <entry key="S30" value="1.0840797123724941" />
-      <entry key="S60" value="1.7072308567298018" />
-      <entry key="M2" value="2.268432041598974" />
-      <entry key="M5" value="3.30916333840488" />
-      <entry key="M10" value="5.7982807754464005" />
-      <entry key="M15" value="9.787451676723839" />
-      <entry key="M30" value="24.552777280584095" />
-      <entry key="H1" value="52.650587551846556" />
-      <entry key="H2" value="102.2297077307151" />
-      <entry key="H4" value="177.04279022648188" />
-      <entry key="D1" value="410.2801351444433" />
-      <entry key="W1" value="532.4131356277262" />
+      <entry key="MS100" value="1.6551859913243718E-14" />
+      <entry key="MS500" value="0.0018010562594338283" />
+      <entry key="S2" value="0.3344965719422112" />
+      <entry key="S5" value="1.1952850811866291" />
+      <entry key="S10" value="1.8802274432156998" />
+      <entry key="S30" value="2.6686866860189395" />
+      <entry key="S60" value="3.3927452695286875" />
+      <entry key="M2" value="4.610053456042593" />
+      <entry key="M5" value="6.995143181275445" />
+      <entry key="M10" value="11.145842911494253" />
+      <entry key="M15" value="15.723767897605931" />
+      <entry key="M30" value="30.527114758523695" />
+      <entry key="H1" value="59.2704253196075" />
+      <entry key="H2" value="110.35505384834386" />
+      <entry key="H4" value="188.03805911772244" />
+      <entry key="D1" value="431.1955291535019" />
+      <entry key="W1" value="558.2885649118524" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.377038190230843E-6" />
-      <entry key="MS500" value="0.06838382648041129" />
-      <entry key="S2" value="0.7359201825629132" />
-      <entry key="S5" value="1.914205031964257" />
-      <entry key="S10" value="3.332367741290715" />
-      <entry key="S30" value="6.4401185679954445" />
-      <entry key="S60" value="8.726958227553258" />
-      <entry key="M2" value="11.16771695506559" />
-      <entry key="M5" value="18.082855665093778" />
-      <entry key="M10" value="38.162231855061194" />
-      <entry key="M15" value="70.8378424800762" />
-      <entry key="M30" value="198.77638013775504" />
-      <entry key="H1" value="431.9534058691972" />
-      <entry key="H2" value="791.7038435058247" />
-      <entry key="H4" value="1301.0688808073899" />
-      <entry key="D1" value="2768.7187262444527" />
-      <entry key="W1" value="3462.1808990762725" />
+      <entry key="MS100" value="0.3211974270770709" />
+      <entry key="MS500" value="1.1636984716995817" />
+      <entry key="S2" value="1.9870074882433888" />
+      <entry key="S5" value="3.5518772791124413" />
+      <entry key="S10" value="5.287444408835298" />
+      <entry key="S30" value="7.655283105468289" />
+      <entry key="S60" value="9.509950061198204" />
+      <entry key="M2" value="12.525008928039867" />
+      <entry key="M5" value="18.967530698942053" />
+      <entry key="M10" value="33.63620508622327" />
+      <entry key="M15" value="55.34808282228227" />
+      <entry key="M30" value="152.75134776371888" />
+      <entry key="H1" value="370.9761488983377" />
+      <entry key="H2" value="738.8097648200131" />
+      <entry key="H4" value="1270.2576742246408" />
+      <entry key="D1" value="2809.5097138095216" />
+      <entry key="W1" value="3535.9818752050824" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -132,6 +132,16 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../GAD221\Appraisal_Infodemic.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Robert Andren\Documents\GAD221" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.72f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\Robert Andren\Documents\.git\Appraisal_Infodemic&quot; -debugCodeOptimization" />
@@ -154,10 +164,12 @@
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
-      <option name="coreClr" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
       <option name="selectedOptions">
         <list />
       </option>
@@ -179,6 +191,7 @@
       <workItem from="1791614296518" duration="100000" />
       <workItem from="1791614460263" duration="3112000" />
       <workItem from="1794969750177" duration="8000" />
+      <workItem from="1795515387789" duration="1864000" />
     </task>
     <servers />
   </component>

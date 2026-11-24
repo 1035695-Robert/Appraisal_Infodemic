@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         if (menuUI != null)
         {
+            AudioManager.OnAudioCallEvent?.Invoke("beep");
             bool status = !menuUI.activeSelf;
             menuUI.SetActive(WindowManager.instance.isMenuToggle = status);
             menuUI.transform.SetAsLastSibling();

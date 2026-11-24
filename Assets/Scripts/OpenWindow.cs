@@ -22,6 +22,7 @@ public class OpenWindow : MonoBehaviour
 
     private void OnButtonClick()
     {
+        AudioManager.OnAudioCallEvent?.Invoke("beep");
         if(WindowManager.instance.isMenuToggle) GameManager.instance.CloseMenu();
        WindowManager.instance.OpenWindow(targetName);
     }

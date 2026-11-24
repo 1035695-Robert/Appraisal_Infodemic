@@ -36,6 +36,7 @@ public class Response : MonoBehaviour
 
     private void SelectedResponse(ResponseType responseSelected)
     {
+        AudioManager.OnAudioCallEvent?.Invoke("complete");
         if (responseSelected == responseType) Correct();
         else Incorrect();
     }

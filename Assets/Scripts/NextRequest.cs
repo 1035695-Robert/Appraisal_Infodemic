@@ -67,10 +67,12 @@ public class NextRequest : MonoBehaviour
         if (targetList[index] == null) yield break;
 
         yield return new WaitForSeconds(waitTime);
+      
 
         foreach (GameObject item in targetList[index].ArticleList)
         {
             item.SetActive(true);
+            
             var button = item.GetComponent<Button>();
             if(!button.interactable)
             {
@@ -81,12 +83,14 @@ public class NextRequest : MonoBehaviour
         foreach (GameObject item in targetList[index].RequestList)
         {
             item.SetActive(true);
+            AudioManager.OnAudioCallEvent?.Invoke("button1");
             yield return new WaitForSeconds(1);
         }
 
         foreach (GameObject item in targetList[index].EmailList)
         {
             item.SetActive(true);
+            AudioManager.OnAudioCallEvent?.Invoke("button1");
             yield return new WaitForSeconds(1);
         }
     }

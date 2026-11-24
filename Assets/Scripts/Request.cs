@@ -47,7 +47,6 @@ public class Request : MonoBehaviour
         subHeader = transform.Find("Info/SubHeader").GetComponent<TextMeshProUGUI>();
         subHeader.text = Header;
         requestbutton = GetComponent<Button>();
-        hasResponded = false;
 
         requestbutton.onClick.AddListener(SelectionRequest);
         EventManager.OnFontSizeUpdate += OnFontChangeSize;

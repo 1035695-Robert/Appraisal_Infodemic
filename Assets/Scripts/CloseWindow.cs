@@ -25,6 +25,7 @@ public class CloseWindow : MonoBehaviour
 
    private void OnButtonClick()
    {
+      AudioManager.OnAudioCallEvent?.Invoke("beep");
       targetWindow.SetActive(false);
    }
 }
