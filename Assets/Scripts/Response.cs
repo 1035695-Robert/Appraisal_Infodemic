@@ -44,7 +44,7 @@ public class Response : MonoBehaviour
     {
         Debug.Log("correct");
         targetRequest.hasResponded = true;
-        StatSlider.OnUpdateStats?.Invoke("Correct");
+        StatSlider.instance.SetStats("Correct");
         NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
         gameObject.SetActive(false);
     }
@@ -53,7 +53,7 @@ public class Response : MonoBehaviour
     {
         Debug.Log("incorrect");
         targetRequest.hasResponded = true;
-        StatSlider.OnUpdateStats?.Invoke("Incorrect");
+        StatSlider.instance.SetStats("Incorrect");
         NextRequest.instance.CompletedRequests(targetRequest.index, targetRequest.waitTime);
         gameObject.SetActive(false);
     }

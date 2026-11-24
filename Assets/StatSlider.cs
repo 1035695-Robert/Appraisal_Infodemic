@@ -1,12 +1,26 @@
 using System;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StatSlider : MonoBehaviour
 {
 
-   public static Action<string> OnUpdateStats;
+    public static StatSlider instance;
+    public void Awake()
+    {
+        if(instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+
+        }
+        instance = this;
+    
+    }
+
+    public static Action<string> OnUpdateStats;
    public Slider correctSlider;
    public Slider IncorrectSlider;
 
@@ -21,6 +35,7 @@ public class StatSlider : MonoBehaviour
 
    public void SetStats(string requestState)
    {
+        Debug.Log("set statistics");
       TotalRequests++;
       correctSlider.maxValue = TotalRequests;
       IncorrectSlider.maxValue = TotalRequests;
