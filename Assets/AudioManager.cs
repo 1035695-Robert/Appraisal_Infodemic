@@ -1,12 +1,13 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using Random = System.Random;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField]AudioSource source;
-    [SerializeField]private AudioClip[] clips;
-    
+    [SerializeField] AudioSource source;
+    [SerializeField] private AudioClip[] clips;
+ 
     public static Action<string> OnAudioCallEvent;
 
     private void OnEnable()
@@ -15,11 +16,17 @@ public class AudioManager : MonoBehaviour
     }
 
     private void PlayAudio(string obj)
-    {
+    {        
         AudioClip targetClip = clips.FirstOrDefault(clip => clip.name == obj);
+
         if (targetClip != null)
         {
             source.PlayOneShot(targetClip);
         }
+    }
+
+    private void OnDisable()
+    {
+        OnAudioCallEvent -= PlayAudio;
     }
 }

@@ -11176,6 +11176,7 @@ GameObject:
   - component: {fileID: 562773572}
   - component: {fileID: 562773571}
   - component: {fileID: 562773574}
+  - component: {fileID: 562773575}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -11283,6 +11284,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuRectTransform: {fileID: 1569607751}
+--- !u!114 &562773575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562773569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001da9dce21dfa24a80f3a90d1eba0ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &576742031
 GameObject:
   m_ObjectHideFlags: 0
@@ -26067,6 +26080,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0c3122d33ee3ea84798f4170a0a4d16e, type: 3}
   - {fileID: 8300000, guid: b2495f36c4d01a841ada14cb9a953dfc, type: 3}
   - {fileID: 8300000, guid: 6aaafd84083f326428557cd8591ada8c, type: 3}
+  - {fileID: 8300000, guid: 3dc84cf9e752ff9449a7b2d7a16fa713, type: 3}
 --- !u!1 &1565075757
 GameObject:
   m_ObjectHideFlags: 0
